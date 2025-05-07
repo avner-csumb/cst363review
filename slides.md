@@ -159,6 +159,21 @@ HAVING AVG(salary) > 60000;
 </v-click>
 
 ---
+<br><br>
+
+
+Explain the concept of a **correlated subquery**.
+
+<v-click>
+
+- A correlated subquery is a subquery that references a column from the outer query. 
+- It is evaluated once for each row processed by the outer query.
+
+
+</v-click>
+
+
+---
 
 
 
@@ -264,6 +279,22 @@ If `advisor_office` depends on `advisor_name`, and `advisor_name` depends on `st
 
 ---
 
+## INDEXES
+
+<br>
+
+What is the main purpose of an **index** in a database?
+
+<br>
+
+
+<v-click>
+
+An index is a data structure that improves the speed of data retrieval by providing a quick lookup mechanism to locate rows without scanning the entire table.
+
+</v-click> 
+
+---
 
 Given this query, what type of index would help most?
 
@@ -341,8 +372,33 @@ A dirty read occurs when a transaction reads data written by another transaction
 </v-click>
 
 
+---
+
+<br><br>
+
+Briefly explain one potential anomaly that can occur in concurrent transactions without proper isolation.
 
 
+<v-click>
+
+**Answer:**
+
+A potential anomaly is a "dirty read," where a transaction reads data that has been written by another transaction but has not yet been committed. If the second transaction is later rolled back, the first transaction has read invalid data. Another is a "lost update," where two transactions try to update the same data, and one transaction's changes are overwritten by the other.
 
 
+</v-click>
 
+
+---
+
+<br><br>
+
+What is sharding in the context of distributed databases like MongoDB?
+
+
+<v-click>
+
+- Sharding is a horizontal partitioning technique that distributes data across multiple database instances or machines. 
+- It improves scalability and load distribution by having each shard hold a portion of the overall dataset.
+
+</v-click>
