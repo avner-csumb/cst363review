@@ -159,8 +159,8 @@ HAVING AVG(salary) > 60000;
 </v-click>
 
 ---
-<br><br>
 
+<br><br>
 
 Explain the concept of a **correlated subquery**.
 
@@ -342,35 +342,6 @@ SELECT * FROM instructor;
 Answer: no  (because for this query we need to scan the entire table)
 
 </v-click>
-
-
----
-
-
-## ISOLATION LEVELS
-
-
-
-Which isolation level allows a "dirty read"?
-
-(Choose one)
-
-
-- Read Committed
-- Read Uncommitted
-- Serializable
-- Repeatable Read
-
-
-
-<v-click>
-
-**Answer:** Read Committed
-
-A dirty read occurs when a transaction reads data written by another transaction that hasn't yet committed. This is dangerous because the data could be rolled back, leaving the first transaction with invalid results.
-
-</v-click>
-
 
 ---
 
